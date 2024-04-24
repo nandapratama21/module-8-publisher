@@ -8,3 +8,7 @@ Answer: The url "amqp://guest:guest@localhost:5672" is used to connect to the Ra
 
 This is my screen that running RabbitMQ
 ![screenshot1.png](screenshot1.png)
+
+After execute 'cargo run' in publisher folder
+
+![screenshot2.png](screenshot2.png)
