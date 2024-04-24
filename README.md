@@ -16,8 +16,7 @@ The subscriber will receive the messages and print them to the console.
 
 ![Screenshot2.png](screenshot2.png)
 
-The chart after execute 'cargo run' in publisher folder, based on this graph, it is shown that there is an increase of messages in the queue.
-We can see that the number of messages in the queue increases when the publisher sends messages to the message broker.
+The chart after execute 'cargo run' in publisher folder, based on this graph, it is shown that there is nothing in the queue because the subscriber has processed all the messages.
 
 ![screenshot3.png](screenshot3.png)
 
