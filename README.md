@@ -18,3 +18,7 @@ The chart after execute 'cargo run' in publisher folder, based on this graph, it
 We can see that the number of messages in the queue increases when the publisher sends messages to the message broker.
 
 ![screenshot3.png](screenshot3.png)
+
+If we using thread sleep to simulate the delay, the chart will be like this. It can be seen that at one time there were about 20-30 messages in the queue.
+
+![screenshot4.png](screenshot4.png)
