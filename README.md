@@ -9,6 +9,12 @@ Answer: The url "amqp://guest:guest@localhost:5672" is used to connect to the Ra
 This is my screen that running RabbitMQ
 ![screenshot1.png](screenshot1.png)
 
-After execute 'cargo run' in publisher folder
+After execute 'cargo run' in publisher folder, the publisher will send 5 messages to the message broker. 
+The subscriber will receive the messages and print them to the console.
 
-![screenshot2.png](screenshot2.png)
+![Screenshot2.png](screenshot2.png)
+
+The chart after execute 'cargo run' in publisher folder, based on this graph, it is shown that there is an increase of messages in the queue.
+We can see that the number of messages in the queue increases when the publisher sends messages to the message broker.
+
+![screenshot3.png](screenshot3.png)
