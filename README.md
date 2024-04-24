@@ -1,3 +1,5 @@
+Tutorial 8
+
 1. How many data your publisher program will send to the message broker in one
    run?
 Answer: Based on main.rs code, the main function initializes a publisher p and sends 5 messages to the message broker in one run.
@@ -22,3 +24,12 @@ We can see that the number of messages in the queue increases when the publisher
 If we using thread sleep to simulate the delay, the chart will be like this. It can be seen that at one time there were about 20-30 messages in the queue.
 
 ![screenshot4.png](screenshot4.png)
+
+If we use more than one subscriber running, there will be like this
+
+![screenshot5.png](screenshot5.png)
+
+![screenshot6.png](screenshot6.png)
+
+We can see that the spikes in the chart are reduced when there are multiple subscribers running. This is because the subscriber's main.rs includes a thread sleep to simulate the delay in processing the messages. 
+So that the messages will be processed sequentially by the subscribers, which reduces the number of messages in the queue at any given time.
